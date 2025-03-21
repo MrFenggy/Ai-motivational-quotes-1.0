@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-en="AI Motivational Quote Postcard Generator - Create Your Personalized Inspirational Postcards" data-lang-zh="AI励志名言明信片生成器 - 创建个性化励志明信片">AI励志名言明信片生成器 - 创建个性化励志明信片</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body class="bg-dark-100 text-white">
+    <header class="fixed w-full bg-dark-200/80 backdrop-blur-md border-b border-white/10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-white" data-lang-en="AI Motivational Quotes" data-lang-zh="AI励志名言">AI励志名言</a>
+            <div class="flex items-center space-x-6">
+                <button id="languageToggle" class="text-sm text-gray-400 hover:text-white transition-colors">中文</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 text-center">
+            <div class="container mx-auto px-6">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-sm text-gray-400 mb-8">
+                    <span data-lang-en="Create Your Inspirational Postcards" data-lang-zh="创建你的专属励志明信片">创建你的专属励志明信片</span>
+                </div>
+                <h1 class="text-6xl font-bold tracking-tight mb-6" data-lang-en="AI-Powered Inspirational Quote Generator" data-lang-zh="AI驱动的励志名言生成器">AI驱动的励志名言生成器</h1>
+                <p class="text-xl text-gray-400 mb-8" data-lang-en="Turn your photos into beautiful motivational postcards with AI-generated quotes" data-lang-zh="用AI生成的励志名言，为你的照片注入新的力量">用AI生成的励志名言，为你的照片注入新的力量</p>
+                <div class="flex justify-center gap-4">
+                    <button id="generateRandom" class="inline-flex items-center px-6 py-3 rounded-full bg-white text-dark-100 hover:bg-white/90 transition-colors text-sm font-medium" data-lang-en="Generate Random Quote" data-lang-zh="随机生成名言">随机生成名言</button>
+                    <button id="uploadPhoto" class="inline-flex items-center px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors text-sm font-medium" data-lang-en="Upload Your Photo" data-lang-zh="上传照片">上传照片</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generated Content Section -->
+        <section class="pb-20">
+            <div id="generatedContent" class="container mx-auto px-6"></div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-200 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-lang-en="AI Motivational Quotes" data-lang-zh="AI励志名言">AI励志名言</h3>
+                    <p class="text-gray-400" data-lang-en="Create your inspirational postcards with the power of AI." data-lang-zh="用AI的力量，创造属于你的励志明信片。">用AI的力量，创造属于你的励志明信片。</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-lang-en="Share" data-lang-zh="分享">分享</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white" data-lang-en="Weibo" data-lang-zh="微博">微博</a>
+                        <a href="#" class="text-gray-400 hover:text-white" data-lang-en="WeChat" data-lang-zh="微信">微信</a>
+                        <a href="#" class="text-gray-400 hover:text-white" data-lang-en="QQ" data-lang-zh="QQ">QQ</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-lang-en="Contact Us" data-lang-zh="联系我们">联系我们</h3>
+                    <p class="text-gray-400" data-lang-en="Have any questions? Contact us anytime." data-lang-zh="有任何问题？随时联系我们。">有任何问题？随时联系我们。</p>
+                    <p class="text-gray-400 mt-2"><a href="mailto:2362758529mr.f@gmail.com" class="hover:text-white transition-colors">2362758529mr.f@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="text-center mt-8 text-gray-400 text-sm">
+                © 2025 Ai motivational quotes. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
